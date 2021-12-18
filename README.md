@@ -19,9 +19,14 @@
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+环境：
+1、protoc 并配置Path环境变量
+https://github.com/protocolbuffers/protobuf/releases
+
+2、protoc-gen-go
+go get -u github.com/golang/protobuf/protoc-gen-go
+
+3、redis
 
 #### 参与贡献
 

@@ -1,0 +1,19 @@
+syntax = "proto3";
+package grpcPb;
+option go_package ="../pb";
+
+message GetRequest {
+    string id = 1;
+    string client_id = 2;
+}
+
+message GetResponse {
+    string result = 1;
+}
+
+service testservice {
+    rpc Get(GetRequest) returns (GetResponse) {}
+    rpc Post(GetRequest) returns (GetResponse) {}
+    rpc Put(GetRequest) returns (GetResponse) {}
+    rpc Delete(GetRequest) returns (GetResponse) {}
+}
